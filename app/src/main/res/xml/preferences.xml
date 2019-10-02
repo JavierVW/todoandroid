@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<CheckBoxPreference-->
+        <!--android:key="pref_dark"-->
+        <!--android:title="Dark Mode"-->
+        <!--android:summary="Enables app wide dark theme"-->
+        <!--android:defaultValue="false"/>-->
+
+    <!--<Preference android:title="Help"-->
+        <!--app:iconSpaceReserved="false">-->
+        <!--<intent-->
+            <!--android:action="android.intent.action.MAIN"-->
+            <!--android:targetPackage="com.jvanwykdev.todo"-->
+
+        <!--/>-->
+    <!--</Preference>-->
+
+    <Preference
+        android:key="help"
+        android:title="Help"
+        android:summary="How to navigate the app"
+        app:iconSpaceReserved="false"
+    />
+
+    <PreferenceCategory android:title="Credits"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:title="Developer"
+            android:key="jav"
+            android:summary="Javier van Wyk"
+            app:iconSpaceReserved="false"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.google.com"
+                />
+        </Preference>
+
+        <Preference
+            android:title="Icon design"
+            android:key="wil"
+            android:summary="@wildesign_"
+            app:iconSpaceReserved="false"
+            >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.twitter.com/wildesign_"
+                />
+        </Preference>
+
+
+    </PreferenceCategory>
+
+    <Preference
+        android:key="version"
+        android:title="App version"
+        android:summary="1.03"
+        app:iconSpaceReserved="false"
+        android:enabled="false"
+        />
+
+</androidx.preference.PreferenceScreen>
