@@ -30,7 +30,7 @@ public class ToDo extends Fragment  implements AddDialog.AddDialogListener, Edit
 
     DatabaseHelper todoDB;
     private ListView listView;
-    DoneFragment doneF = new DoneFragment();
+
 
     public void AddInput(String newData){
         //newData = DatabaseUtils.sqlEscapeString(newData);
@@ -130,10 +130,6 @@ public class ToDo extends Fragment  implements AddDialog.AddDialogListener, Edit
 
         }
 
-
-
-        //-------------NEW PART ----------
-        //--------------EDIT--------
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
