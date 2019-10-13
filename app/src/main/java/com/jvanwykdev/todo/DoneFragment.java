@@ -87,9 +87,6 @@ public class DoneFragment extends Fragment {
 
         }
 
-
-
-        //-------------NEW PART ----------
         //Long press will delete, short press will move
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -142,7 +139,7 @@ public class DoneFragment extends Fragment {
                 }
 
                 if (itemID2 > -1){
-//setup the swipe to done method and use the done table's methods here. it currently messes with the original list
+
                     todoDB.movedBack(itemID2,name);
                     listViewAdapter.notifyDataSetChanged();
                     Toast.makeText(getContext(),"Task moved to TODO!",Toast.LENGTH_LONG).show();
@@ -155,13 +152,7 @@ public class DoneFragment extends Fragment {
             }
         });
 
-
-
-        //-------END----------
     }
 
 
 }
-
-
-//TODO refresh fragments on view

@@ -22,16 +22,16 @@ public class AddDialog extends AppCompatDialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-//        AlertDialog.Builder builder = new AlertDialog.Builder(this.getContext());
+
 
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
-//        View view = inflater.inflate(R.layout.layout_dialog,null);
+
         View view = inflater.inflate(R.layout.layout_dialog,null);
-        //AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
         addNewAct = view.findViewById(R.id.addTask);
         builder.setView(view)
                 .setTitle("Add task")

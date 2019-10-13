@@ -29,10 +29,6 @@ public class MainActivity extends AppCompatActivity implements AddDialog.AddDial
     private Toolbar mtoolbar;
 
 
-    //SharedPreferences sharedPrefer = PreferenceManager.getDefaultSharedPreferences(this);
-//    boolean dmMode = sharedPrefer.getBoolean("pref_dark", true);
-
-
 
 
     @Override
@@ -50,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements AddDialog.AddDial
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setupShared();
-        //setGlobalTheme(dmMode);
+
 
         //setTheme(R.style.AppTheme_NoActionBar);
 
